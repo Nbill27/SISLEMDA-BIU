@@ -77,14 +77,3 @@ application/
 📃 Lisensi
 
 Proyek ini bebas digunakan untuk pengembangan internal dan pembelajaran. Silakan fork dan modifikasi sesuai kebutuhanmu.
-
-
-✅ Langkah Selanjutnya
-
-1. Salin isi di atas ke file bernama `README.md`
-2. Letakkan file tersebut di root folder proyekmu.
-3. Push ke GitHub:
-   bash
-   git add README.md
-   git commit -m "Add README.md"
-   git push origin kelompok5
