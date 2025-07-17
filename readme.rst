@@ -70,6 +70,8 @@ application/
 👨‍💻 Kontributor
 
 * Nabil (Nbill27) – Fullstack Developer & Admin System Builder
+* TEAM – Builder
+
 
 
 📃 Lisensi
