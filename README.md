@@ -1,50 +1,63 @@
-🗂️ SISLEMDA – Sistem Lembar Kendali
+<div align="center">
 
-SISLEMDA (Sistem Lembar Kendali) adalah aplikasi berbasis web untuk mengelola proses pengajuan kegiatan dalam lingkungan institusi pendidikan atau organisasi. Sistem ini dibuat untuk memudahkan manajemen pengguna, prodi, fakultas, klasifikasi pengajuan, hingga pelacakan status pengajuan yang dilakukan oleh user.
+# SISLEMDA
+### Sistem Lembar Kendali
 
-🚀 Fitur Utama
+Aplikasi web untuk mengelola proses pengajuan kegiatan di lingkungan institusi pendidikan, mulai dari manajemen pengguna, prodi, fakultas, klasifikasi pengajuan, hingga pelacakan status pengajuan secara real-time.
 
-- **🔐 Login Multi-Role**  
-  Mendukung login untuk berbagai peran seperti Admin, Dosen, Kaprodi, Dekan, Wakil Rektor, Rektor, Keuangan, hingga Yayasan.
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
+[![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3-EF4223?style=flat&logo=codeigniter&logoColor=white)](https://codeigniter.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![License](https://img.shields.io/badge/License-Free%20for%20Learning-blue)](#lisensi)
 
-- **👥 Manajemen Pengguna**
-  - Tambah/edit/hapus pengguna
-  - Role pengguna per prodi/fakultas
+</div>
 
-- **🏢 Manajemen Unit & Klasifikasi Pengajuan**
-  - Kelola unit pengaju
-  - Kelola klasifikasi pengajuan
+---
 
-- **📚 Manajemen Prodi & Fakultas**
-  - Input dan update data Prodi dan Fakultas
+## Daftar Isi
 
-- **📑 Pengajuan Kegiatan**
-  - Menampilkan 10 pengajuan terbaru
-  - Statistik pengajuan per bulan (Chart)
+- [Tentang Proyek](#tentang-proyek)
+- [Fitur Utama](#fitur-utama)
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
+- [Struktur Direktori](#struktur-direktori)
+- [Instalasi](#instalasi)
+- [Role Pengguna](#role-pengguna)
+- [Kontributor](#kontributor)
+- [Lisensi](#lisensi)
 
-- **📊 Dashboard Interaktif**
-  - Card indikator jumlah data (pengguna, prodi, fakultas, dll.)
-  - Chart statistik pengajuan bulanan
-  - Tabel data pengguna & pengajuan
+---
 
-🛠️ Teknologi yang Digunakan
+## Tentang Proyek
 
-- **Backend**: PHP + CodeIgniter 3  
-- **Database**: MySQL  
-- **Frontend**: HTML5, CSS3, Bootstrap 5, DataTables  
-- **Library Tambahan**:
-  - FontAwesome / Bootstrap Icons
-  - Chart.js
+**SISLEMDA (Sistem Lembar Kendali)** adalah sistem digital yang dirancang untuk menggantikan proses pengajuan kegiatan manual di institusi pendidikan. Sistem ini menyederhanakan alur persetujuan lintas jabatan, mulai dari Dosen hingga Yayasan, dengan dashboard terpusat yang menampilkan statistik dan status pengajuan secara transparan.
 
-📂 Struktur Direktori Penting
+## Fitur Utama
 
+| Modul | Deskripsi |
+|---|---|
+| **Login Multi-Role** | Mendukung Admin, Dosen, Kaprodi, Dekan, Wakil Rektor, Rektor, Keuangan, dan Yayasan |
+| **Manajemen Pengguna** | Tambah, edit, hapus pengguna beserta pengaturan role per prodi/fakultas |
+| **Manajemen Unit & Klasifikasi** | Kelola unit pengaju dan klasifikasi jenis pengajuan |
+| **Manajemen Prodi & Fakultas** | Input dan update data program studi serta fakultas |
+| **Pengajuan Kegiatan** | Menampilkan 10 pengajuan terbaru dan riwayat lengkap |
+| **Dashboard Interaktif** | Card indikator jumlah data, chart statistik bulanan, dan tabel data dinamis |
 
+## Teknologi yang Digunakan
 
+- **Backend:** PHP, CodeIgniter 3
+- **Database:** MySQL
+- **Frontend:** HTML5, CSS3, Bootstrap 5, DataTables
+- **Library Tambahan:** FontAwesome / Bootstrap Icons, Chart.js
+
+## Struktur Direktori
+
+```
 application/
 ├── controllers/
 │   └── Admins.php
 ├── models/
-│   └── Admin\_m.php
+│   └── Admin_m.php
 ├── views/
 │   ├── admin/
 │   │   └── dashboard/
@@ -52,28 +65,43 @@ application/
 │   └── template/
 │       ├── header.php
 │       ├── footer.php
-│       └── sidebar\_admin.php
+│       └── sidebar_admin.php
+```
 
+## Instalasi
 
-
-📦 Cara Menjalankan
-
-1. Clone repository ini:
-   bash
+1. Clone repository ini
+   ```bash
    git clone https://github.com/Nbill27/SISLEMDA_BIU.git
-
+   ```
 2. Import file `sislemda.sql` ke database MySQL
-3. Sesuaikan konfigurasi database di `application/config/database.php`
+3. Sesuaikan konfigurasi koneksi database di `application/config/database.php`
 4. Jalankan project menggunakan local server (XAMPP/Laragon)
-5. Login dengan akun yang tersedia di tabel `user`
+5. Login menggunakan akun yang tersedia pada tabel `user`
 
-👨‍💻 Kontributor
+## Role Pengguna
 
-* Nabil (Nbill27) – Fullstack Developer & Admin System Builder
-* TEAM – Builder
+| Role | Akses |
+|---|---|
+| Admin | Kelola data master (pengguna, prodi, fakultas, unit, klasifikasi) |
+| Dosen | Mengajukan kegiatan |
+| Kaprodi | Meninjau dan menyetujui pengajuan tingkat prodi |
+| Dekan | Meninjau dan menyetujui pengajuan tingkat fakultas |
+| Wakil Rektor / Rektor | Persetujuan tingkat institusi |
+| Keuangan | Verifikasi anggaran pengajuan |
+| Yayasan | Persetujuan akhir |
 
+## Kontributor
 
+- **Nabil ([@Nbill27](https://github.com/Nbill27))** - Fullstack Developer & Admin System Builder
+- **Team** - Builder
 
-📃 Lisensi
+## Lisensi
 
 Proyek ini bebas digunakan untuk pengembangan internal dan pembelajaran. Silakan fork dan modifikasi sesuai kebutuhanmu.
+
+---
+
+<div align="center">
+Dibuat dengan dedikasi untuk digitalisasi proses administrasi kampus.
+</div>
